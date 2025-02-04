@@ -1,0 +1,108 @@
+.date-inputs {
+  display: flex;
+  margin-top: 10px;
+}
+
+.date-input {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 0;
+  width: 150px;
+  text-align: center;
+  font-family: "Exo", sans-serif; /* Aplicar la fuente a los inputs */
+}
+
+.date-input:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.date-input:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: none;
+}
+
+/* Custom styles for the calendar */
+.custom-calendar {
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  font-family: "Exo", sans-serif; /* Aplicar la fuente al calendario */
+}
+
+.custom-calendar .react-datepicker__header {
+  background-color: #f5f5f5;
+  color: #333;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+}
+
+.custom-calendar .react-datepicker__day--selected {
+  background-color: #000;
+  color: white;
+}
+
+.custom-calendar .react-datepicker__day--in-range,
+.custom-calendar .react-datepicker__day--in-selecting-range {
+  background-color: #22222227;
+  color: white;
+}
+
+.custom-calendar .react-datepicker__day--keyboard-selected {
+  background-color: transparent;
+  color: #f05e09;
+  font-weight: normal;
+}
+
+.custom-calendar .react-datepicker__day:hover {
+  background-color: #222;
+  color: white;
+}
+
+.custom-calendar .react-datepicker__day--today {
+  color: #f05e09;
+  font-weight: bold;
+  background-color: #ffeb3b; /* Fondo destacado para el día de hoy */
+  border: solid 2px #f05e09; /* Borde más visible para el día de hoy */
+  border-radius: 50%;
+}
+
+.custom-calendar .react-datepicker__day--today.react-datepicker__day--selected {
+  background-color: transparent;
+  color: #f05e09;
+}
+
+/* Negrita para sábados y domingos */
+.custom-calendar .react-datepicker__day--weekend {
+  font-weight: bold;
+}
+
+/* Negrita para días festivos (suponiendo que se les aplique una clase específica) */
+.custom-calendar .react-datepicker__day--holiday {
+  font-weight: bold;
+}
+
+/* Custom styles for the control buttons */
+.custom-calendar .react-datepicker__navigation {
+  background-color: transparent; /* Fondo transparente para los botones de navegación */
+  border: none;
+  color: #f05e09; /* Color del texto */
+  padding: 5px;
+}
+
+.custom-calendar .react-datepicker__navigation:hover {
+  background-color: transparent; /* Fondo transparente para los botones de navegación al pasar el ratón */
+  color: #d04e08; /* Color del texto al pasar el ratón */
+}
+
+.custom-calendar .react-datepicker__navigation--previous {
+  left: 10px;
+}
+
+.custom-calendar .react-datepicker__navigation--next {
+  right: 10px;
+}
